@@ -1,4 +1,14 @@
 ﻿.Body {
 	min-height: calc(100% - 3em);
 	background: rgb(16, 16, 16);
+	box-sizing: border-box;
+
+	padding: 2em 16%;
+}
+
+@media (max-width: 512px) {
+	.Body {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
 }
