@@ -5,7 +5,7 @@ export default function ProfilePicture(props: IProfilePictureProperties)
 {
 	return <img
 		className={"ProfilePicture" + (props.className ? ` ${props.className}` : "")}
-		src={props.uri.href}
+		src={props.source}
 		alt="Profile Picture"
 		style={{
 			width: props.width,
@@ -16,7 +16,7 @@ export default function ProfilePicture(props: IProfilePictureProperties)
 export interface IProfilePictureProperties
 {
 	className?: string;
-	uri: URL;
+	source: string;
 	width?: string;
 	height?: string;
 }
