@@ -23,3 +23,7 @@
 .Header > .rightSide > *:not(:last-child) {
 	margin-right: 1em;
 }
+
+.Header .profilePicture {
+	height: 2.4em;
+}
