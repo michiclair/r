@@ -1,6 +1,5 @@
 ﻿.Body {
 	min-height: calc(100% - 3em);
-	background: rgb(16, 16, 16);
 	box-sizing: border-box;
 
 	padding: 2em 16%;
