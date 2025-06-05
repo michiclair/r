@@ -1,6 +1,4 @@
 ﻿import React, { useEffect, useState } from "react";
-import TechnologyDescriptor from "./TechnologyDescriptor.ts";
-import ImageDescriptor from "./ImageDescriptor.ts";
 import TechnologyTagList from "./TechnologyTagList.tsx";
 import ProjectDescriptor from "./ProjectDescriptor.ts";
 import GithubProjectDescriptor from "./GithubProjectDescriptor.ts";
