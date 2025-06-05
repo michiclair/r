@@ -1,7 +1,7 @@
 ﻿import React from "react";
 import "../styles/ProfilePicture.css";
 
-export default function ProfilePicture(props: ProfilePictureProperties)
+export default function ProfilePicture(props: IProfilePictureProperties)
 {
 	return <img
 		className={"ProfilePicture" + (props.className ? ` ${props.className}` : "")}
@@ -13,7 +13,7 @@ export default function ProfilePicture(props: ProfilePictureProperties)
 		}}/>
 }
 
-export interface ProfilePictureProperties
+export interface IProfilePictureProperties
 {
 	className?: string;
 	uri: URL;
