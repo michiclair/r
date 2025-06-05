@@ -27,3 +27,7 @@
 .Header .profilePicture {
 	height: 2.4em;
 }
+
+.Header .profileName {
+	color: rgb(255, 255, 255);
+}

@@ -9,6 +9,7 @@ export default function Header()
 			<ProfilePicture
 				uri={new URL("https://avatars.githubusercontent.com/u/77251557")}
 				className="profilePicture"/>
+			<div className="profileName">NAME_PLACEHOLDER</div>
 		</div>
 		<div className="rightSide">
 		</div>
