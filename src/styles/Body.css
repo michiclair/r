@@ -2,7 +2,7 @@
 	min-height: calc(100% - 3.4em);
 	box-sizing: border-box;
 
-	padding: 2em 16%;
+	padding: 2em 24%;
 }
 
 @media (max-width: 512px) {
