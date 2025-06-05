@@ -1,4 +1,25 @@
 ﻿.Header {
 	height: 3em;
-	background: rgb(24, 24, 24);
+	padding: 0.2em 2em;
+	justify-content: space-between;
+
+	background: rgba(255, 255, 255, 0.125);
+	box-shadow: 0 0.25em 1.9375em rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(0.9em);
+	-webkit-backdrop-filter: blur(0.9em);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Header, .Header > div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.Header > .leftSide > *:not(:first-child) {
+	margin-left: 1em;
+}
+
+.Header > .rightSide > *:not(:last-child) {
+	margin-right: 1em;
 }
