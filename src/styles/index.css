@@ -1,6 +1,10 @@
-﻿html {
+﻿:root {
+	--primary: rgb(88, 242, 201);
+	--secondary: rgb(88, 101, 242);
+}
+
+html {
 	font-size: 16px;
-	background-color: black;
 	color: white;
 }
 

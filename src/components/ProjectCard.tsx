@@ -5,6 +5,7 @@ import TechnologyTagList from "./TechnologyTagList.tsx";
 import ProjectDescriptor from "./ProjectDescriptor.ts";
 import GithubProjectDescriptor from "./GithubProjectDescriptor.ts";
 import { octokit } from "../shared/octokit.ts";
+import "../styles/ProjectCard.css";
 
 export default function ProjectCard(props: IProjectCardProperties)
 {
@@ -25,6 +26,7 @@ export default function ProjectCard(props: IProjectCardProperties)
 				{
 					setName("?");
 					setDescription("It appears to be a problem while communicating with GitHub.");
+					return;
 				}
 
 				setAddress(response.url);
@@ -35,8 +37,10 @@ export default function ProjectCard(props: IProjectCardProperties)
 	}, []);
 
 	return <div className="ProjectCard">
-		{address ? <a className="ProjectCard_name" href={address}>{name}</a> : <h1 className="ProjectCard_name">{name}</h1>}
-		<p className="ProjectCard_description">{description}</p>
+		<div>
+			{address ? <a className="ProjectCard_name" href={address}>{name}</a> : <h1 className="ProjectCard_name">{name}</h1>}
+			<p className="ProjectCard_description">{description}</p>
+		</div>
 		<TechnologyTagList technologies={props.project.technologies}></TechnologyTagList>
 	</div>
 }

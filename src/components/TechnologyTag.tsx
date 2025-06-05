@@ -1,4 +1,5 @@
 ﻿import TechnologyDescriptor from "./TechnologyDescriptor.ts";
+import "../styles/TechnologyTag.css";
 
 export default function TechnologyTag(props: ITechnologyTagProperties)
 {

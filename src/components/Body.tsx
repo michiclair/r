@@ -12,7 +12,7 @@ export default function Body()
 	return <div className="Body">
 		<section className="Body_presentation">
 			<div>
-				<h1>Name</h1>
+				<h1>Name placeholder</h1>
 				<p>
 					Enthusiastic and dedicated developer with hands-on experience in
 					personal projects and a strong passion for building robust, scalable solutions.
@@ -23,6 +23,7 @@ export default function Body()
 			<ProfilePicture source="https://avatars.githubusercontent.com/u/77251557"></ProfilePicture>
 		</section>
 		<section className="Body_projects">
+			<h2>PROJECTS</h2>
 			<ProjectCardList projects={[
 				GithubProjectDescriptor.aulaServer,
 				GithubProjectDescriptor.aulajs,

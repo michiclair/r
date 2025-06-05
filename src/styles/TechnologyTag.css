@@ -1,0 +1,17 @@
+﻿.TechnologyTag {
+	width: max-content;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 1);
+	font-size: 0.8em;
+	background: rgba(0, 0, 0, 0.1);
+	border: 0px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0.5em;
+	padding: 0.5em 1em;
+
+	transition: 200ms all ease;
+}
+
+
+.TechnologyTag:hover {
+	background: rgba(0, 0, 0, 0.2);
+}

@@ -1,6 +1,7 @@
 ﻿import React from "react";
 import TechnologyTag from "./TechnologyTag.tsx";
 import TechnologyDescriptor from "./TechnologyDescriptor.ts";
+import "../styles/TechnologyTagList.css";
 
 export default function TechnologyTagList(props: ITechnologyTagListProperties)
 {
