@@ -1,0 +1,8 @@
+﻿.ProfilePicture {
+	background-color: rgba(255, 255, 255, 0.125);
+	box-shadow: 0 0 0.6em rgba(0, 0, 0, 1);
+	backdrop-filter: blur(0.9em);
+	-webkit-backdrop-filter: blur(0.9em);
+	border-radius: 50%;
+	border-color: rgba(255, 255, 255, 0.05);
+}
