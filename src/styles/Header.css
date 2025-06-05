@@ -1,4 +1,6 @@
-﻿.Header {
+﻿@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.Header {
 	height: 3em;
 	padding: 0.2em 2em;
 	justify-content: space-between;
@@ -30,4 +32,9 @@
 
 .Header .profileName {
 	color: rgb(255, 255, 255);
+	font-family: "Nunito", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	letter-spacing: 0.06em;
 }
