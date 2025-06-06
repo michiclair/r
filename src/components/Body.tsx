@@ -51,5 +51,15 @@ export default function Body()
 				GithubProjectDescriptor.aliisRpcMaker,
 			]} />
 		</section>
+		<section>
+			<h2>CERTIFICATIONS</h2>
+			<ul>
+				<li>
+					<a href="">
+						Foundational C# with Microsoft
+					</a>
+				</li>
+			</ul>
+		</section>
 	</div>
 }
