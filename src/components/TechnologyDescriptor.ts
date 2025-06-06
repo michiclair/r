@@ -3,68 +3,68 @@
 	static readonly #s_csharp: TechnologyDescriptor = new TechnologyDescriptor(
 		"C#",
 		"https://dotnet.microsoft.com/languages/csharp",
-		"/assets/csharp.png");
+		"./assets/csharp.png");
 	static readonly #s_typescript: TechnologyDescriptor = new TechnologyDescriptor(
 		"TypeScript",
 		"https://www.typescriptlang.org/",
-		"/assets/typescript.svg");
+		"./assets/typescript.svg");
 
 	static readonly #s_javascript: TechnologyDescriptor = new TechnologyDescriptor(
 		"JavaScript",
 		"https://developer.mozilla.org/docs/Web/JavaScript",
-		"/assets/javascript.svg");
+		"./assets/javascript.svg");
 
 	static readonly #s_nodejs: TechnologyDescriptor = new TechnologyDescriptor(
 		"Node.js",
 		"https://nodejs.org/",
-		"/assets/nodejs.png");
+		"./assets/nodejs.png");
 
 	static readonly #s_react: TechnologyDescriptor = new TechnologyDescriptor(
 		"React",
 		"https://react.dev/",
-		"/assets/react.png");
+		"./assets/react.png");
 
 	static readonly #s_docker: TechnologyDescriptor = new TechnologyDescriptor(
 		"Docker",
 		"https://www.docker.com/",
-		"/assets/docker.png");
+		"./assets/docker.png");
 
 	static readonly #s_dotnet: TechnologyDescriptor = new TechnologyDescriptor(
 		".NET",
 		"https://dotnet.microsoft.com/",
-		"/assets/dotnet.png");
+		"./assets/dotnet.png");
 
 	static readonly #s_sqlite: TechnologyDescriptor = new TechnologyDescriptor(
 		"SQLite",
 		"https://www.sqlite.org/",
-		"/assets/sqlite.png");
+		"./assets/sqlite.png");
 
 	static readonly #s_efcore: TechnologyDescriptor = new TechnologyDescriptor(
 		"Entity Framework Core",
 		"https://learn.microsoft.com/ef/core/",
-		"/assets/efcore.png");
+		"./assets/efcore.png");
 
 	static readonly #s_aspnet: TechnologyDescriptor = new TechnologyDescriptor(
 		"ASP.NET Core",
 		"https://learn.microsoft.com/aspnet/core/",
-		"/assets/aspnet.jpg");
+		"./assets/aspnet.jpg");
 	static readonly #s_html: TechnologyDescriptor = new TechnologyDescriptor(
 		"HTML",
 		"https://developer.mozilla.org/en-US/docs/Web/HTML",
-		"/assets/html.svg");
+		"./assets/html.svg");
 
 	static readonly #s_css: TechnologyDescriptor = new TechnologyDescriptor(
 		"CSS",
 		"https://developer.mozilla.org/en-US/docs/Web/CSS",
-		"/assets/css.svg");
+		"./assets/css.svg");
 	static readonly #s_electron: TechnologyDescriptor = new TechnologyDescriptor(
 		"Electron",
 		"https://www.electronjs.org/",
-		"/assets/electron.png");
+		"./assets/electron.png");
 	static readonly #s_tailwind: TechnologyDescriptor = new TechnologyDescriptor(
 		"Tailwind CSS",
 		"https://tailwindcss.com/",
-		"/assets/tailwind.png");
+		"./assets/tailwind.png");
 
 	readonly #_name: string;
 	readonly #_source: string;

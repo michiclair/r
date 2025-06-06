@@ -4,11 +4,11 @@ export class RedirectSocialDescriptor extends SocialDescriptor
 {
 	static readonly #s_github: RedirectSocialDescriptor = new RedirectSocialDescriptor(
 		"GitHub",
-		"/assets/github_icon.svg",
+		"./assets/github_icon.svg",
 		"https://github.com/michironoaware");
 	static readonly #s_linkedin: RedirectSocialDescriptor = new RedirectSocialDescriptor(
 		"LinkedIn",
-		"/assets/linkedin_icon.svg",
+		"./assets/linkedin_icon.svg",
 		"");
 
 	readonly #_address: string;
