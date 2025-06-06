@@ -2,7 +2,8 @@
 
 .ProjectCard {
 	width: 100%;
-	max-width: 20em;
+	min-width: 18em;
+	max-width: calc(33% - 0.5em);
 	padding: 1em;
 	box-sizing: border-box;
 
@@ -22,6 +23,19 @@
 	
 	transition: 100ms background ease;
 }
+
+@media (max-width: 1750px) {
+	.ProjectCard {
+		max-width: calc(50% - 0.5em);
+	}
+}
+
+@media (max-width: 1200px) {
+	.ProjectCard {
+		max-width: 100%;
+	}
+}
+
 
 .ProjectCard:hover {
 	background: rgba(0, 0, 0, 0.3);
