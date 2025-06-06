@@ -83,5 +83,6 @@ export default function Body()
 				<li>Latin - Intermediate</li>
 			</ul>
 		</section>
+		<div style={{ marginBottom: "10em"}}></div>
 	</div>
 }
