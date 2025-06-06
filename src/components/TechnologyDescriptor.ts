@@ -127,6 +127,26 @@
 		return this.#s_aspnet;
 	}
 
+	public static get html()
+	{
+		return this.#s_html;
+	}
+
+	public static get css()
+	{
+		return this.#s_css;
+	}
+
+	public static get electron()
+	{
+		return this.#s_electron;
+	}
+
+	public static get tailwind()
+	{
+		return this.#s_tailwind;
+	}
+
 	public get name()
 	{
 		return this.#_name;
@@ -140,23 +160,5 @@
 	public get imageSource()
 	{
 		return this.#_imageSource;
-	}
-
-	public static get html() {
-		return this.#s_html;
-	}
-
-	public static get css() {
-		return this.#s_css;
-	}
-
-	public static get electron()
-	{
-		return this.#s_electron;
-	}
-
-	public static get tailwind()
-	{
-		return this.#s_tailwind;
 	}
 }

@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState, useId } from "react";
+﻿import React, { useEffect, useId, useState } from "react";
 import TechnologyTagList from "./TechnologyTagList.tsx";
 import ProjectDescriptor from "./ProjectDescriptor.ts";
 import GithubProjectDescriptor from "./GithubProjectDescriptor.ts";
@@ -7,9 +7,9 @@ import "../styles/ProjectCard.css";
 
 export default function ProjectCard(props: IProjectCardProperties)
 {
-	const [name, setName] = useState<string>();
-	const [description, setDescription] = useState<string>();
-	const [address, setAddress] = useState<string | undefined>();
+	const [ name, setName ] = useState<string>();
+	const [ description, setDescription ] = useState<string>();
+	const [ address, setAddress ] = useState<string | undefined>();
 
 	const elementId = useId();
 
@@ -43,7 +43,7 @@ export default function ProjectCard(props: IProjectCardProperties)
 		<div id={elementId}>
 			{address
 				? <a className="ProjectCard_name" href={address} target="_blank" rel="noopener noreferrer">{name}</a>
-				: <h3 className="ProjectCard_name">{name}</h3>}
+				:<h3 className="ProjectCard_name">{name}</h3>}
 			<p className="ProjectCard_description">{description}</p>
 		</div>
 		<TechnologyTagList technologies={props.project.technologies}></TechnologyTagList>

@@ -11,8 +11,7 @@ export default function SocialIcon(props: ISocialIconProperties)
 		return <a className="SocialIcon" href={props.social.address} target="_blank" rel="noopener noreferrer">
 			<img src={props.social.iconSource} alt={props.social.name}/>
 		</a>
-	}
-	else if (props.social instanceof ClipboardSocialDescriptor)
+	} else if (props.social instanceof ClipboardSocialDescriptor)
 	{
 		const elementId = useId();
 

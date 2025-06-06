@@ -4,7 +4,7 @@ import "../styles/ProfilePicture.css";
 export default function ProfilePicture(props: IProfilePictureProperties)
 {
 	return <img
-		className={"ProfilePicture" + (props.className ? ` ${props.className}` : "")}
+		className={"ProfilePicture" + (props.className ? ` ${props.className}`:"")}
 		src={props.source}
 		alt="Profile Picture"
 		style={{

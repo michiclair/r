@@ -19,11 +19,6 @@ export class ClipboardSocialDescriptor extends SocialDescriptor
 		this.#_content = content;
 	}
 
-	public get content()
-	{
-		return this.#_content;
-	}
-
 	public static get email()
 	{
 		return this.#_email;
@@ -32,5 +27,10 @@ export class ClipboardSocialDescriptor extends SocialDescriptor
 	public static get phone()
 	{
 		return this.#_phone;
+	}
+
+	public get content()
+	{
+		return this.#_content;
 	}
 }

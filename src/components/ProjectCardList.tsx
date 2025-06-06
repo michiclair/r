@@ -1,6 +1,5 @@
 ﻿import React from "react";
-import ProjectCard, { IProjectCardProperties } from "./ProjectCard.tsx";
-import TechnologyDescriptor from "./TechnologyDescriptor.ts";
+import ProjectCard from "./ProjectCard.tsx";
 import ProjectDescriptor from "./ProjectDescriptor.ts";
 import "../styles/ProjectCardList.css";
 

@@ -1,15 +1,10 @@
 ﻿import React from "react";
 import "../styles/Body.css";
-import ProjectCard from "./ProjectCard.tsx";
 import TechnologyDescriptor from "./TechnologyDescriptor.ts";
-import ProjectDescriptor from "./ProjectDescriptor.ts";
 import GithubProjectDescriptor from "./GithubProjectDescriptor.ts";
 import ProfilePicture from "./ProfilePicture.tsx";
 import ProjectCardList from "./ProjectCardList.tsx";
-import StackCard from "./StackCard.tsx";
-import TechnologyButton from "./TechnologyButton.tsx";
 import TechnologyButtonList from "./TechnologyButtonList.tsx";
-import SocialIcon from "./SocialIcon.tsx";
 import SocialIconList from "./SocialIconList.tsx";
 import { RedirectSocialDescriptor } from "./RedirectSocialDescriptor.ts";
 import { ClipboardSocialDescriptor } from "./ClipboardSocialDescriptor.ts";
@@ -32,7 +27,7 @@ export default function Body()
 					RedirectSocialDescriptor.linkedin,
 					ClipboardSocialDescriptor.email,
 					ClipboardSocialDescriptor.phone,
-				]} />
+				]}/>
 			</div>
 			<ProfilePicture source="https://avatars.githubusercontent.com/u/77251557"></ProfilePicture>
 		</section>
@@ -50,7 +45,7 @@ export default function Body()
 				TechnologyDescriptor.javascript,
 				TechnologyDescriptor.css,
 				TechnologyDescriptor.html,
-			]} />
+			]}/>
 		</section>
 		<section className="Body_projects">
 			<h2>PROJECTS</h2>
@@ -59,7 +54,7 @@ export default function Body()
 				GithubProjectDescriptor.aulajs,
 				GithubProjectDescriptor.enter,
 				GithubProjectDescriptor.aliisRpcMaker,
-			]} />
+			]}/>
 		</section>
 		<section>
 			<h2>CERTIFICATIONS</h2>
@@ -79,6 +74,6 @@ export default function Body()
 				<li>Latin - Intermediate</li>
 			</ul>
 		</section>
-		<div style={{ marginBottom: "10em"}}></div>
+		<div style={{ marginBottom: "10em" }}></div>
 	</div>
 }
