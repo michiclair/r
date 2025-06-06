@@ -7,6 +7,8 @@ import GithubProjectDescriptor from "./GithubProjectDescriptor.ts";
 import ProfilePicture from "./ProfilePicture.tsx";
 import ProjectCardList from "./ProjectCardList.tsx";
 import StackCard from "./StackCard.tsx";
+import TechnologyButton from "./TechnologyButton.tsx";
+import TechnologyButtonList from "./TechnologyButtonList.tsx";
 
 export default function Body()
 {
@@ -23,26 +25,22 @@ export default function Body()
 			</div>
 			<ProfilePicture source="https://avatars.githubusercontent.com/u/77251557"></ProfilePicture>
 		</section>
-		<section className="Body_stack">
-			<h2>STACKS</h2>
-			<div className="Body_stack_stacks">
-				<StackCard name="BACKEND" technologies={[
-					TechnologyDescriptor.dotnet,
-					TechnologyDescriptor.aspnet,
-					TechnologyDescriptor.csharp,
-					TechnologyDescriptor.efcore,
-					TechnologyDescriptor.docker,
-				]} />
-				<StackCard name="FRONTEND" technologies={[
-					TechnologyDescriptor.nodejs,
-					TechnologyDescriptor.react,
-					TechnologyDescriptor.tailwind,
-					TechnologyDescriptor.typescript,
-					TechnologyDescriptor.javascript,
-					TechnologyDescriptor.css,
-					TechnologyDescriptor.html,
-				]} />
-			</div>
+		<section className="Body_technologies">
+			<h2>TECHNOLOGIES</h2>
+			<TechnologyButtonList technologies={[
+				TechnologyDescriptor.dotnet,
+				TechnologyDescriptor.aspnet,
+				TechnologyDescriptor.csharp,
+				TechnologyDescriptor.efcore,
+				TechnologyDescriptor.docker,
+				TechnologyDescriptor.nodejs,
+				TechnologyDescriptor.react,
+				TechnologyDescriptor.tailwind,
+				TechnologyDescriptor.typescript,
+				TechnologyDescriptor.javascript,
+				TechnologyDescriptor.css,
+				TechnologyDescriptor.html,
+			]} />
 		</section>
 		<section className="Body_projects">
 			<h2>PROJECTS</h2>
