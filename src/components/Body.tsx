@@ -45,7 +45,6 @@ export default function Body()
 				TechnologyDescriptor.docker,
 				TechnologyDescriptor.nodejs,
 				TechnologyDescriptor.react,
-				TechnologyDescriptor.tailwind,
 				TechnologyDescriptor.typescript,
 				TechnologyDescriptor.javascript,
 				TechnologyDescriptor.css,
