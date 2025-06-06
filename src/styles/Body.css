@@ -50,6 +50,12 @@ h2 {
 	height: 12em;
 }
 
+.Body_stack_stacks {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1em;
+}
 
 @media (max-width: 512px) {
 	.Body {
