@@ -7,7 +7,7 @@ export default function Header()
 	return <header className="Header">
 		<div className="leftSide">
 			<ProfilePicture
-				source={new URL("https://avatars.githubusercontent.com/u/77251557")}
+				source="https://avatars.githubusercontent.com/u/77251557"
 				className="profilePicture"/>
 			<div className="profileName">NAME_PLACEHOLDER</div>
 		</div>
