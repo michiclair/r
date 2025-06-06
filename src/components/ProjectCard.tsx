@@ -41,7 +41,9 @@ export default function ProjectCard(props: IProjectCardProperties)
 
 	return <div className="ProjectCard">
 		<div id={elementId}>
-			{address ? <a className="ProjectCard_name" href={address}>{name}</a> : <h3 className="ProjectCard_name">{name}</h3>}
+			{address
+				? <a className="ProjectCard_name" href={address} target="_blank" rel="noopener noreferrer">{name}</a>
+				: <h3 className="ProjectCard_name">{name}</h3>}
 			<p className="ProjectCard_description">{description}</p>
 		</div>
 		<TechnologyTagList technologies={props.project.technologies}></TechnologyTagList>
