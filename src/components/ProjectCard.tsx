@@ -15,6 +15,8 @@ export default function ProjectCard(props: IProjectCardProperties)
 	{
 		if (props.project instanceof GithubProjectDescriptor)
 		{
+			setAddress(`https://github.com/${props.project.ownerName}/${props.project.repositoryName}`);
+
 			octokit.rest.repos.get({
 				owner: props.project.ownerName,
 				repo: props.project.repositoryName
@@ -27,7 +29,6 @@ export default function ProjectCard(props: IProjectCardProperties)
 					return;
 				}
 
-				setAddress(response.url);
 				setName(response.data.name);
 				setDescription(response.data.description ?? "...");
 			});
