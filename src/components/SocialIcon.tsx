@@ -27,7 +27,7 @@ export default function SocialIcon(props: ISocialIconProperties)
 			return () => socialIconElement.removeEventListener("click", copyToClipboardCallback);
 		}, []);
 
-		return <div id={elementId} className="SocialIcon">
+		return <div id={elementId} className="SocialIcon ClipboardSocialIcon">
 			<img src={props.social.iconSource} alt={props.social.name}/>
 		</div>
 	}

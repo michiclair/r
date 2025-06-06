@@ -13,3 +13,16 @@
 	opacity: 1;
 	height: 2em;
 }
+
+.ClipboardSocialIcon {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
+.ClipboardSocialIcon:hover:after {
+	font-weight: 600;
+	margin-left: 0.5em;
+	content: "Copy";
+}
+
