@@ -26,6 +26,7 @@ export default function Body()
 					Actively seeking my first professional opportunity to apply my
 					skills and grow within a real-world development environment.
 				</p>
+				<p>Córdoba, Argentina.</p>
 				<SocialIconList socials={[
 					RedirectSocialDescriptor.github,
 					RedirectSocialDescriptor.linkedin,
