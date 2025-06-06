@@ -12,6 +12,7 @@ import TechnologyButtonList from "./TechnologyButtonList.tsx";
 import SocialIcon from "./SocialIcon.tsx";
 import SocialIconList from "./SocialIconList.tsx";
 import { RedirectSocialDescriptor } from "./RedirectSocialDescriptor.ts";
+import { ClipboardSocialDescriptor } from "./ClipboardSocialDescriptor.ts";
 
 export default function Body()
 {
@@ -28,6 +29,8 @@ export default function Body()
 				<SocialIconList socials={[
 					RedirectSocialDescriptor.github,
 					RedirectSocialDescriptor.linkedin,
+					ClipboardSocialDescriptor.email,
+					ClipboardSocialDescriptor.phone,
 				]} />
 			</div>
 			<ProfilePicture source="https://avatars.githubusercontent.com/u/77251557"></ProfilePicture>
