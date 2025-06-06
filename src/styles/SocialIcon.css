@@ -1,4 +1,5 @@
 ﻿.SocialIcon {
+	cursor: pointer;
 	height: min-content;
 }
 
