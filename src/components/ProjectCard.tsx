@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState, useId } from "react";
 import TechnologyTagList from "./TechnologyTagList.tsx";
 import ProjectDescriptor from "./ProjectDescriptor.ts";
 import GithubProjectDescriptor from "./GithubProjectDescriptor.ts";
@@ -11,11 +11,15 @@ export default function ProjectCard(props: IProjectCardProperties)
 	const [description, setDescription] = useState<string>();
 	const [address, setAddress] = useState<string | undefined>();
 
+	const elementId = useId();
+
 	useEffect(() =>
 	{
 		if (props.project instanceof GithubProjectDescriptor)
 		{
-			setAddress(`https://github.com/${props.project.ownerName}/${props.project.repositoryName}`);
+			const repositoryAddress = `https://github.com/${props.project.ownerName}/${props.project.repositoryName}`;
+			setAddress(repositoryAddress);
+			document.getElementById(elementId)!.addEventListener("click", () => window.location.href = repositoryAddress);
 
 			octokit.rest.repos.get({
 				owner: props.project.ownerName,
@@ -36,7 +40,7 @@ export default function ProjectCard(props: IProjectCardProperties)
 	}, []);
 
 	return <div className="ProjectCard">
-		<div>
+		<div id={elementId}>
 			{address ? <a className="ProjectCard_name" href={address}>{name}</a> : <h3 className="ProjectCard_name">{name}</h3>}
 			<p className="ProjectCard_description">{description}</p>
 		</div>
