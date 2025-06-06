@@ -9,6 +9,8 @@ import ProjectCardList from "./ProjectCardList.tsx";
 import StackCard from "./StackCard.tsx";
 import TechnologyButton from "./TechnologyButton.tsx";
 import TechnologyButtonList from "./TechnologyButtonList.tsx";
+import SocialIcon from "./SocialIcon.tsx";
+import SocialIconList from "./SocialIconList.tsx";
 
 export default function Body()
 {
@@ -22,6 +24,18 @@ export default function Body()
 					Actively seeking my first professional opportunity to apply my
 					skills and grow within a real-world development environment.
 				</p>
+				<SocialIconList socials={[
+					{
+						name: "GitHub",
+						profileAddress: "https://github.com/michironoaware",
+						iconSource: "/assets/github_icon.svg",
+					},
+					{
+						name: "LinkedIn",
+						profileAddress: "",
+						iconSource: "/assets/linkedin_icon.svg",
+					}
+				]} />
 			</div>
 			<ProfilePicture source="https://avatars.githubusercontent.com/u/77251557"></ProfilePicture>
 		</section>
