@@ -61,5 +61,13 @@ export default function Body()
 				</li>
 			</ul>
 		</section>
+		<section className="Body_languages">
+			<h2>LANGUAGES</h2>
+			<ul>
+				<li>Spanish - Fluent</li>
+				<li>English - Intermediate</li>
+				<li>Latin - Intermediate</li>
+			</ul>
+		</section>
 	</div>
 }
