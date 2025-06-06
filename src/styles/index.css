@@ -1,6 +1,8 @@
 ﻿:root {
-	--primary: rgb(88, 242, 201);
-	--secondary: rgb(88, 101, 242);
+	--primary: var(--green);
+
+	--green: rgb(88, 242, 201);
+	--blue: rgb(88, 101, 242);
 }
 
 html {
