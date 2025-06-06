@@ -8,7 +8,7 @@ export default function SocialIcon(props: ISocialIconProperties)
 {
 	if (props.social instanceof RedirectSocialDescriptor)
 	{
-		return <a className="SocialIcon RedirectSocialIcon" href={props.social.address}>
+		return <a className="SocialIcon" href={props.social.address}>
 			<img src={props.social.iconSource} alt={props.social.name}/>
 		</a>
 	}
