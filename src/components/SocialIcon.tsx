@@ -1,15 +1,18 @@
 ﻿import "../styles/SocialIcon.css";
+import { SocialDescriptor } from "./SocialDescriptor.ts";
+import { RedirectSocialDescriptor } from "./RedirectSocialDescriptor.ts";
 
 export default function SocialIcon(props: ISocialIconProperties)
 {
-	return <a className="SocialIcon" href={props.profileAddress}>
-		<img src={props.iconSource} alt={props.name}/>
-	</a>
+	if (props.social instanceof RedirectSocialDescriptor)
+	{
+		return <a className="SocialIcon" href={props.social.address}>
+			<img src={props.social.iconSource} alt={props.social.name}/>
+		</a>
+	}
 }
 
 export interface ISocialIconProperties
 {
-	iconSource: string;
-	name: string;
-	profileAddress: string;
+	social: SocialDescriptor;
 }
