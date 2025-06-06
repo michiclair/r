@@ -30,6 +30,15 @@ a {
 	margin-bottom: 4em;
 }
 
+@media (max-width: 660px) {
+	.Body_presentation {
+		padding-top: 2em;
+		flex-direction: column-reverse;
+		gap: 2em;
+	}
+}
+
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Noto Sans", sans-serif;
 }
