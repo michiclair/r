@@ -7,12 +7,12 @@
 	static readonly #s_typescript: TechnologyDescriptor = new TechnologyDescriptor(
 		"TypeScript",
 		"https://www.typescriptlang.org/",
-		"/assets/typescript.png");
+		"/assets/typescript.svg");
 
 	static readonly #s_javascript: TechnologyDescriptor = new TechnologyDescriptor(
 		"JavaScript",
 		"https://developer.mozilla.org/docs/Web/JavaScript",
-		"/assets/javascript.webp");
+		"/assets/javascript.svg");
 
 	static readonly #s_nodejs: TechnologyDescriptor = new TechnologyDescriptor(
 		"Node.js",
@@ -51,12 +51,12 @@
 	static readonly #s_html: TechnologyDescriptor = new TechnologyDescriptor(
 		"HTML",
 		"https://developer.mozilla.org/en-US/docs/Web/HTML",
-		"/assets/html.png");
+		"/assets/html.svg");
 
 	static readonly #s_css: TechnologyDescriptor = new TechnologyDescriptor(
 		"CSS",
 		"https://developer.mozilla.org/en-US/docs/Web/CSS",
-		"/assets/css.png");
+		"/assets/css.svg");
 	static readonly #s_electron: TechnologyDescriptor = new TechnologyDescriptor(
 		"Electron",
 		"https://www.electronjs.org/",
