@@ -47,3 +47,13 @@
 	border-radius: 0.5em;
 	box-shadow: -1em 0.25em 1.9375em rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 1200px) {
+	.StackCard_technologies img {
+		height: 3em;
+	}
+
+	.StackCard_technologies img:hover {
+		height: 4em;
+	}
+}
