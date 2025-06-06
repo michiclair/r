@@ -19,7 +19,7 @@ export default function Body()
 	return <div className="Body">
 		<section className="Body_presentation">
 			<div>
-				<h1>Name placeholder</h1>
+				<h1>Espinach</h1>
 				<p>
 					Enthusiastic and dedicated developer with hands-on experience in
 					personal projects and a strong passion for building robust, scalable solutions.
@@ -64,7 +64,7 @@ export default function Body()
 			<h2>CERTIFICATIONS</h2>
 			<ul>
 				<li>
-					<a href="">
+					<a href="https://www.freecodecamp.org/certification/celinereferenceexception/foundational-c-sharp-with-microsoft">
 						Foundational C# with Microsoft
 					</a>
 				</li>

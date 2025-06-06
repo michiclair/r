@@ -9,7 +9,7 @@ export class ClipboardSocialDescriptor extends SocialDescriptor
 	static readonly #_phone: ClipboardSocialDescriptor = new ClipboardSocialDescriptor(
 		"Phone",
 		"/assets/phone_icon.svg",
-		"0");
+		"+54 9 351 623 6611");
 
 	readonly #_content: string;
 
