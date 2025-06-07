@@ -60,7 +60,10 @@ export default function Body()
 			<h2>CERTIFICATIONS</h2>
 			<ul>
 				<li>
-					<a href="https://www.freecodecamp.org/certification/celinereferenceexception/foundational-c-sharp-with-microsoft">
+					<a
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://www.freecodecamp.org/certification/celinereferenceexception/foundational-c-sharp-with-microsoft">
 						Foundational C# with Microsoft
 					</a>
 				</li>

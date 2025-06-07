@@ -19,7 +19,7 @@ export default function ProjectCard(props: IProjectCardProperties)
 		{
 			const repositoryAddress = `https://github.com/${props.project.ownerName}/${props.project.repositoryName}`;
 			setAddress(repositoryAddress);
-			document.getElementById(elementId)!.addEventListener("click", () => window.location.href = repositoryAddress);
+			document.getElementById(elementId)!.addEventListener("click", () => window.open(repositoryAddress, '_blank')!.focus());
 
 			octokit.rest.repos.get({
 				owner: props.project.ownerName,
