@@ -24,7 +24,6 @@ export default function Body()
 				<p>Córdoba, Argentina.</p>
 				<SocialIconList socials={[
 					RedirectSocialDescriptor.github,
-					RedirectSocialDescriptor.linkedin,
 					ClipboardSocialDescriptor.email,
 					ClipboardSocialDescriptor.phone,
 				]}/>
