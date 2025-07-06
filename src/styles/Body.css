@@ -1,25 +1,57 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .Body {
-	font-family: "Nunito", sans-serif;
+	font-family:  "Nunito", "Ubuntu", "Raleway", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-weight: 300;
+	font-size: 1.2em;
 
 	min-height: 100vh;
 	box-sizing: border-box;
-
 	padding: 2em 24%;
-	-webkit-backdrop-filter: blur(4em);
-	backdrop-filter: blur(4em);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-	box-shadow: 0 0.25em 1.9375em rgba(0, 0, 0, 0.1);
+	transition: all 0.6s ease-out;
 }
 
 a {
-	color: var(--primary);
+	color: color-mix(in oklch, var(--primary), var(--background-opposite-color) var(--background-opposite-color-percentage));
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 800;
+	font-family: "Raleway", "Noto Sans", sans-serif;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #00000022;
+}
+
+h1 {
+	font-size: var(--fontsize-xxl2);
+}
+
+h2 {
+	font-size: var(--fontsize-xxl);
+}
+
+h3 {
+	font-size: var(--fontsize-xl);
+}
+
+h4 {
+	font-size: var(--fontsize-lg);
+}
+
+h5 {
+	font-size: var(--fontsize-md);
+}
+
+h6 {
+	font-size: var(--fontsize-xs);
+}
+
 
 .Body_presentation {
 	justify-self: center;
@@ -27,48 +59,53 @@ a {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 4em;
-}
-
-@media (max-width: 660px) {
-	.Body_presentation {
-		padding-top: 2em;
-		flex-direction: column-reverse;
-		gap: 2em;
-	}
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Noto Sans", sans-serif;
-}
-
-h1 {
-	font-weight: 800;
-	font-size: 3em;
-}
-
-h2 {
-	font-weight: 600;
-	font-size: 2.6em;
-	margin: 1.5em 0.5em 0.5em 0;
-}
-
-.Body_presentation p {
-	font-weight: 200;
-	letter-spacing: 0.03em;
+	transition: all 0.6s ease-out;
 }
 
 .Body_presentation > .ProfilePicture {
 	align-self: center;
 	margin-left: 3em;
 	height: 12em;
+	transition: height 0.6s ease-out;
 }
 
-.Body_stack_stacks {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 1em;
+.Body_presentation p {
+	font-weight: 200;
+}
+
+@media (max-width: 1408px) {
+	.Body_presentation {
+		max-width: 100%;
+	}
+
+	.Body_presentation > .ProfilePicture {
+		align-self: center;
+		margin-left: 2em;
+		height: 10em;
+	}
+}
+
+
+@media (max-width: 1152px) {
+	.Body_presentation {
+		padding-top: 2em;
+		flex-direction: column-reverse;
+	}
+}
+
+@media (max-width: 896px) {
+	.Body {
+		padding-left: 12%;
+		padding-right: 12%;
+	}
+}
+
+
+@media (max-width: 640px) {
+	.Body {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
 }
 
 @media (max-width: 512px) {

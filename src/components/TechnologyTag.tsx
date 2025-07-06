@@ -3,8 +3,7 @@ import "../styles/TechnologyTag.css";
 
 export default function TechnologyTag(props: ITechnologyTagProperties)
 {
-	return <a className="TechnologyTag" href={props.descriptor.source} target="_blank"
-	          rel="noopener noreferrer">{props.descriptor.name}</a>;
+	return <div className="TechnologyTag">{props.descriptor.name}</div>;
 }
 
 export interface ITechnologyTagProperties

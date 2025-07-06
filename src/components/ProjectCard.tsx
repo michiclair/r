@@ -39,7 +39,7 @@ export default function ProjectCard(props: IProjectCardProperties)
 		}
 	}, []);
 
-	return <div className="ProjectCard">
+	return <div className="ProjectCard Button">
 		<div id={elementId}>
 			{address
 				? <a className="ProjectCard_name" href={address} target="_blank" rel="noopener noreferrer">{name}</a>

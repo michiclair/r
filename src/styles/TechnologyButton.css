@@ -1,16 +1,8 @@
 ﻿.TechnologyButton {
 	padding: 0.5em;
-	background: rgba(0, 0, 0, 0.2);
-	border: 1px solid rgba(0, 0, 0, 0.05);
-	box-shadow: -1em 0.25em 1.9375em rgba(0, 0, 0, 0.15);
-	transition: 100ms background ease, 200ms height ease;
 }
 
 .TechnologyButton, .TechnologyButton img {
-	height: 2em;
+	height: 1.75em;
 	border-radius: 0.5em;
-}
-
-.TechnologyButton:hover {
-	background: rgba(0, 0, 0, 0.3);
 }

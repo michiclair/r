@@ -8,10 +8,11 @@ import TechnologyButtonList from "./TechnologyButtonList.tsx";
 import SocialIconList from "./SocialIconList.tsx";
 import { RedirectSocialDescriptor } from "./RedirectSocialDescriptor.ts";
 import { ClipboardSocialDescriptor } from "./ClipboardSocialDescriptor.ts";
+import TechnologyTextRef from "./TechnologyTextRef.tsx";
 
 export default function Body()
 {
-	return <div className="Body">
+	return <div className="Body LightMode BlueTheme">
 		<section className="Body_presentation">
 			<div>
 				<h1>Espinach</h1>
@@ -24,14 +25,41 @@ export default function Body()
 				<p>Córdoba, Argentina.</p>
 				<SocialIconList socials={[
 					RedirectSocialDescriptor.github,
+					RedirectSocialDescriptor.email,
 					ClipboardSocialDescriptor.email,
-					ClipboardSocialDescriptor.phone,
 				]}/>
 			</div>
 			<ProfilePicture source="https://avatars.githubusercontent.com/u/77251557"></ProfilePicture>
 		</section>
 		<section className="Body_technologies">
-			<h2>TECHNOLOGIES</h2>
+			<h2>Technologies</h2>
+			<p>
+				I have practical experience with a modern backend-focused tech stack, including&nbsp;
+				<TechnologyTextRef technology={TechnologyDescriptor.dotnet} />,&nbsp;
+				<TechnologyTextRef technology={TechnologyDescriptor.aspnet} />,&nbsp;
+				<TechnologyTextRef technology={TechnologyDescriptor.efcore} />,
+				which I’ve used to build robust APIs and scalable backend services.
+				I focus on writing clear, maintainable code and continuously improving my development practices through real project work.
+			</p>
+			<p>
+				Although my primary interest is backend development,
+				I’m also familiar with front-end technologies like&nbsp;
+				<TechnologyTextRef technology={TechnologyDescriptor.react} />,&nbsp;
+				<TechnologyTextRef technology={TechnologyDescriptor.typescript} />,&nbsp;
+				<TechnologyTextRef technology={TechnologyDescriptor.javascript} />,&nbsp;
+				<TechnologyTextRef technology={TechnologyDescriptor.html} />,
+				and <TechnologyTextRef technology={TechnologyDescriptor.css} />,
+				which helps me collaborate effectively in full-stack environments.
+				I’ve used <TechnologyTextRef technology={TechnologyDescriptor.docker} /> to
+				set up consistent development environments,
+				and Node.js mainly for front-end tooling and build processes.
+			</p>
+			<p>
+				Through my projects, I’ve developed a strong foundation in backend engineering
+				and a solid understanding of full-stack development.
+				I'm eager to join a professional team, deepen my expertise,
+				and contribute clean, reliable code to real-world applications.
+			</p>
 			<TechnologyButtonList technologies={[
 				TechnologyDescriptor.dotnet,
 				TechnologyDescriptor.aspnet,
@@ -47,7 +75,7 @@ export default function Body()
 			]}/>
 		</section>
 		<section className="Body_projects">
-			<h2>PROJECTS</h2>
+			<h2>Projects</h2>
 			<ProjectCardList projects={[
 				GithubProjectDescriptor.aulaServer,
 				GithubProjectDescriptor.aulajs,
@@ -56,7 +84,7 @@ export default function Body()
 			]}/>
 		</section>
 		<section>
-			<h2>CERTIFICATIONS</h2>
+			<h2>Certifications</h2>
 			<ul>
 				<li>
 					<a
@@ -69,10 +97,10 @@ export default function Body()
 			</ul>
 		</section>
 		<section className="Body_languages">
-			<h2>LANGUAGES</h2>
+			<h2>Languages</h2>
 			<ul>
 				<li>Spanish - Fluent</li>
-				<li>English - Intermediate</li>
+				<li>English - Intermediate (able to read, write, and communicate in technical contexts)</li>
 				<li>Latin - Intermediate</li>
 			</ul>
 		</section>

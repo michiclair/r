@@ -1,8 +1,34 @@
 ﻿:root {
-	--primary: var(--green);
+	--color-green: rgb(88, 242, 201);
+	--color-blue: rgb(88, 101, 242);
 
-	--green: rgb(88, 242, 201);
-	--blue: rgb(88, 101, 242);
+	--fontsize-xxl2: 2em;
+	--fontsize-xxl: 1.5em;
+	--fontsize-xl: 1.25em;
+	--fontsize-lg: 1.1em;
+	--fontsize-md: 1em;
+	--fontsize-sm: 0.9em;
+	--fontsize-xs: 0.8em;
+}
+
+.LightMode {
+	--background-color: #fff;
+	--text-color: #000;
+
+	--background-opposite-color-percentage: 10%;
+	--background-opposite-color: #000;
+}
+
+.DimmedMode {
+	--background-color: #212830;
+	--text-color: #fff;
+
+	--background-opposite-color-percentage: 10%;
+	--background-opposite-color: #fff;
+}
+
+.BlueTheme {
+	--primary: var(--color-blue);
 }
 
 html {
