@@ -7,16 +7,10 @@
 }
 
 .TechnologyButton, .TechnologyButton img {
-	height: 4em;
-	border-radius: 1em;
+	height: 2em;
+	border-radius: 0.5em;
 }
 
 .TechnologyButton:hover {
 	background: rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 1200px) {
-	.TechnologyButton, .TechnologyButton img {
-		height: 3em;
-	}
 }
