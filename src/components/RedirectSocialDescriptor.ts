@@ -1,4 +1,5 @@
 ﻿import { SocialDescriptor } from "./SocialDescriptor.ts";
+import { ClipboardSocialDescriptor } from "./ClipboardSocialDescriptor.ts";
 
 export class RedirectSocialDescriptor extends SocialDescriptor
 {
@@ -10,6 +11,10 @@ export class RedirectSocialDescriptor extends SocialDescriptor
 		"LinkedIn",
 		"./assets/linkedin_icon.svg",
 		"");
+	static readonly #s_email: RedirectSocialDescriptor = new RedirectSocialDescriptor(
+		"Email",
+		"./assets/email_icon.svg",
+		`mailto:${ClipboardSocialDescriptor.email.content}`);
 
 	readonly #_address: string;
 
@@ -32,5 +37,10 @@ export class RedirectSocialDescriptor extends SocialDescriptor
 	public get address()
 	{
 		return this.#_address;
+	}
+
+	public static get email()
+	{
+		return this.#s_email;
 	}
 }

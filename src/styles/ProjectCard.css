@@ -2,7 +2,7 @@
 
 .ProjectCard {
 	width: 100%;
-	min-width: 18em;
+	min-width: 16em;
 	max-width: calc(33% - 0.5em);
 	padding: 1em;
 	box-sizing: border-box;
@@ -11,17 +11,16 @@
 	flex-direction: column;
 	justify-content: space-between;
 
-	background: rgba(0, 0, 0, 0.2);
-	border: 2px solid rgba(0, 0, 0, 0.1);
-	border-radius: 0.5em;
-	box-shadow: -1em 0.25em 1.9375em rgba(0, 0, 0, 0.2);
-
 	cursor: pointer;
-	color: white;
+	user-select: none;
 	text-decoration: none;
 	font-family: "Nunito", sans-serif;
 
-	transition: 100ms background ease;
+	transition: all 0.6s ease-out,
+	            box-shadow 0.075s ease,
+	            border 0s ease,
+	            max-width 0s ease,
+	            height 0s ease;
 }
 
 @media (max-width: 1750px) {
@@ -37,19 +36,13 @@
 }
 
 
-.ProjectCard:hover {
-	background: rgba(0, 0, 0, 0.3);
-}
-
 .ProjectCard_name {
-	color: var(--primary);
 	text-decoration: none;
-	font-size: 1.1em;
-	font-weight: 600;
+	font-size: var(--fontsize-lg);
+	font-weight: 700;
 }
 
 .ProjectCard_description {
-	font-size: 0.9em;
-	font-weight: 300;
+	font-size: var(--fontsize-sm);
 	letter-spacing: 0.03em;
 }

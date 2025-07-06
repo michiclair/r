@@ -1,18 +1,5 @@
 ﻿.TechnologyTag {
-	width: max-content;
-	text-decoration: none;
-	color: rgba(255, 255, 255, 1);
-	font-size: 0.8em;
-	font-weight: 700;
-	background: rgba(0, 0, 0, 0.1);
-	border: 0px solid rgba(0, 0, 0, 0.1);
-	border-radius: 0.5em;
-	padding: 0.5em 1em;
-
-	transition: 200ms all ease;
-}
-
-
-.TechnologyTag:hover {
-	background: rgba(0, 0, 0, 0.3);
+	color: color-mix(in oklch, var(--primary), var(--background-opposite-color) var(--background-opposite-color-percentage));
+	font-size: var(--fontsize-xs);
+	font-weight: 600;
 }
