@@ -81,6 +81,8 @@ export default function Body()
 				GithubProjectDescriptor.aulajs,
 				GithubProjectDescriptor.enter,
 				GithubProjectDescriptor.aliisRpcMaker,
+				GithubProjectDescriptor.typeHelper,
+				GithubProjectDescriptor.httpAbstractions,
 			]}/>
 		</section>
 		<section>

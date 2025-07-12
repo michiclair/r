@@ -44,6 +44,22 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 		],
 		"michironoaware",
 		"AliisRPCMaker");
+	static readonly #s_typeHelper: GithubProjectDescriptor = new GithubProjectDescriptor(
+		[
+			TechnologyDescriptor.javascript,
+			TechnologyDescriptor.typescript,
+			TechnologyDescriptor.nodejs,
+		],
+		"michironoaware",
+		"michi-typehelper");
+	static readonly #s_httpAbstractions: GithubProjectDescriptor = new GithubProjectDescriptor(
+		[
+			TechnologyDescriptor.javascript,
+			TechnologyDescriptor.typescript,
+			TechnologyDescriptor.nodejs,
+		],
+		"michironoaware",
+		"michi-http-abstractions");
 
 	readonly #_ownerName: string;
 	readonly #_repositoryName: string;
@@ -73,6 +89,16 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 	public static get aliisRpcMaker()
 	{
 		return this.#s_aliisRpcMaker;
+	}
+
+	public static get typeHelper()
+	{
+		return this.#s_typeHelper;
+	}
+
+	public static get httpAbstractions()
+	{
+		return this.#s_httpAbstractions;
 	}
 
 	public get ownerName()
