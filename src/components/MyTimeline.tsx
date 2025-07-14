@@ -131,8 +131,9 @@ export default function MyTimeline() {
 					slideShow
 					slideShowType={"slide_from_sides"}
 					highlightCardsOnHover
+					theme={theme}
 					items={items}
-					mode="VERTICAL"
+					mode="HORIZONTAL"
 					semanticTags={{
 						cardTitle: 'h1',
 						cardSubtitle: 'h2',

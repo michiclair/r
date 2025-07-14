@@ -19,10 +19,6 @@
 	font-weight: 600;
 }
 
-.MyTimelineCard {
-	width: 98% !important;
-}
-
 .MyTimelineCard, .MyTimelineControls {
 	box-sizing: border-box;
 }
