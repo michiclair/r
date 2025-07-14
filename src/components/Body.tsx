@@ -9,6 +9,7 @@ import SocialIconList from "./SocialIconList.tsx";
 import { RedirectSocialDescriptor } from "./RedirectSocialDescriptor.ts";
 import { ClipboardSocialDescriptor } from "./ClipboardSocialDescriptor.ts";
 import TechnologyTextRef from "./TechnologyTextRef.tsx";
+import MyTimeline from "./MyTimeline.tsx";
 
 export default function Body()
 {
@@ -31,8 +32,8 @@ export default function Body()
 			</div>
 			<ProfilePicture source="https://avatars.githubusercontent.com/u/77251557"></ProfilePicture>
 		</section>
-		<section className="Body_technologies">
-			<h2>Technologies</h2>
+		<section className="Body_experience">
+			<h2>Experience</h2>
 			<p>
 				I have practical experience with a modern backend-focused tech stack, including&nbsp;
 				<TechnologyTextRef technology={TechnologyDescriptor.dotnet} />,&nbsp;
@@ -54,12 +55,13 @@ export default function Body()
 				set up consistent development environments,
 				and Node.js mainly for front-end tooling and build processes.
 			</p>
-			<p>
+			<p style={{ marginBottom: "1.5em" }}>
 				Through my projects, I’ve developed a strong foundation in backend engineering
 				and a solid understanding of full-stack development.
 				I'm eager to join a professional team, deepen my expertise,
 				and contribute clean, reliable code to real-world applications.
 			</p>
+			<MyTimeline></MyTimeline>
 			<TechnologyButtonList technologies={[
 				TechnologyDescriptor.dotnet,
 				TechnologyDescriptor.aspnet,
