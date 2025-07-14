@@ -81,7 +81,6 @@ export default function MyTimeline() {
 				</p>
 				<ul>
 					<li>Designed as an interactive tribute to the visual style and atmosphere of the novel ESC</li>
-					<li>Integrated Gateway API events via <code>aula.js</code> to enable real-time communication and room transitions</li>
 				</ul>
 			</div>
 		},
@@ -99,7 +98,7 @@ export default function MyTimeline() {
 				<ul>
 					<li>Designed a rich API for runtime type checking and validation across environments (Node.js, Deno, browser)</li>
 					<li>Implemented robust assertion utilities that throw context-aware <code>TypeError</code>s for defensive programming</li>
-					<li>Enabled support for TypeScript-native types, enum validation, class constructors, and union types</li>
+					<li>Enabled support for TypeScript-native types, enum validation, and class constructors</li>
 				</ul>
 			</div>
 		},
