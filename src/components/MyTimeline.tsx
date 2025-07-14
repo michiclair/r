@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+// @ts-ignore
 import { Chrono } from 'react-chrono';
 import { TimelineItemModel } from "react-chrono/dist/models/TimelineItemModel";
 import "../styles/MyTimeline.css";
