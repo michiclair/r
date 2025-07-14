@@ -1,0 +1,35 @@
+﻿.MyTimeline {
+	position: relative;
+	left: -1%;
+	width: 102%;
+}
+
+.MyTimeline h1, .MyTimeline h2, .MyTimeline h3, .MyTimeline h4, .MyTimeline h5, .MyTimeline h6 {
+	border: none;
+	font-family: "Raleway", "Noto Sans", sans-serif;
+}
+
+.MyTimeline h1 {
+	font-size: var(--fontsize-lg);
+	font-weight: 800;
+}
+
+.MyTimeline h2 {
+	font-size: var(--fontsize-xs);
+	font-weight: 600;
+}
+
+.MyTimelineCard, .MyTimelineControls {
+	box-sizing: border-box;
+}
+
+.MyTimelineCardContent {
+	font-size: var(--fontsize-xs);
+	font-weight: 600;
+	color: #535963;
+}
+
+.MyTimelineCardContent > p:first-child:is(p) {
+	margin-top: 0;
+}
+
