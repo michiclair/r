@@ -34,7 +34,7 @@ export default function MyTimeline() {
 		{
 			cardTitle: "Aula – Roleplay Social Platform",
 			cardSubtitle: "A social platform focused on creating and developing roleplay stories.",
-			date: new Date("2025-05-26T20:34:57Z"),
+			date: new Date("2025-02-11T23:36:32Z"),
 			url: `https://github.com/${GithubProjectDescriptor.aulaServer.ownerName}/${GithubProjectDescriptor.aulaServer.repositoryName}`,
 			timelineContent: <div className="MyTimelineCardContent">
 				<p>
