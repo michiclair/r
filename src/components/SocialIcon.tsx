@@ -9,9 +9,23 @@ export default function SocialIcon(props: ISocialIconProperties)
 {
 	if (props.social instanceof RedirectSocialDescriptor)
 	{
-		return <a className="SocialIcon Button" href={props.social.address} target="_blank" rel="noopener noreferrer">
+		// We use an event listener instead of an <a> tag because react-chrono's timeline overrides the default behavior of <a> tags. (bug)
+		const elementId = useId();
+
+		useEffect(() =>
+		{
+			const redirectCallback = () =>
+				window.open((props.social as RedirectSocialDescriptor).address);
+
+			const socialIconElement = document.getElementById(elementId)!;
+			socialIconElement.addEventListener("click", redirectCallback);
+
+			return () => socialIconElement.removeEventListener("click", redirectCallback);
+		}, []);
+
+		return <button className="SocialIcon Button" id={elementId}>
 			<img src={props.social.iconSource} alt={props.social.name}/>
-		</a>
+		</button>
 	} else if (props.social instanceof ClipboardSocialDescriptor)
 	{
 		const elementId = useId();

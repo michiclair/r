@@ -1,4 +1,11 @@
-﻿.SocialIcon {
+﻿.SocialIcon:is(button) {
+	height: 2.75em;
+	width: 2.75em;
+	border: none;
+	font-size: var(--fontsize-md);
+}
+
+.SocialIcon {
 	padding: 0.5em;
 	height: 1.75em;
 }
