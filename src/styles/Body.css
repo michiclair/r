@@ -93,6 +93,10 @@ h6 {
 		padding-top: 2em;
 		flex-direction: column-reverse;
 	}
+
+	.Body_presentation > .ProfilePicture {
+		margin-left: 0;
+	}
 }
 
 @media (max-width: 896px) {
