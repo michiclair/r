@@ -126,7 +126,7 @@ export default function MyTimeline() {
 	return (
 		<div className="MyTimeline">
 			<Chrono
-					disableToolbar
+					//disableToolbar
 					slideShow
 					slideShowType={"slide_from_sides"}
 					highlightCardsOnHover
