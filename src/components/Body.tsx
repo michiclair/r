@@ -19,7 +19,7 @@ export default function Body()
 				<h1>Espinach</h1>
 				<p>
 					Enthusiastic and dedicated developer with hands-on experience in
-					personal projects and a strong passion for building robust, scalable solutions.
+					projects and a strong passion for building robust, scalable solutions.
 					Actively seeking my first professional opportunity to apply my
 					skills and grow within a real-world development environment.
 				</p>
@@ -85,6 +85,7 @@ export default function Body()
 				GithubProjectDescriptor.aliisRpcMaker,
 				GithubProjectDescriptor.typeHelper,
 				GithubProjectDescriptor.httpAbstractions,
+				GithubProjectDescriptor.docrypted,
 			]}/>
 		</section>
 		<section>
