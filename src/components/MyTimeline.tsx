@@ -20,14 +20,12 @@ export default function MyTimeline() {
 			date: new Date("2022-09-09T21:12:36Z"),
 			url: `https://github.com/${GithubProjectDescriptor.aliisRpcMaker.ownerName}/${GithubProjectDescriptor.aliisRpcMaker.repositoryName}`,
 			timelineContent: <div className="MyTimelineCardContent">
-				<p>
-					Designed and developed a cross-platform desktop application using Electron and TailwindCSS to allow users to
-					generate and apply custom Discord Rich Presences without coding. The app streamlined the customization process and
-					provided real-time preview and management features.
-				</p>
+				<strong>Creator & Sole Developer</strong>
 				<ul>
-					<li>Implemented persistent configuration storage and live Discord integration</li>
-					<li>Enabled users to create, edit, and manage multiple RPC profiles</li>
+					<li>Solved the complexity of configuring Discord Rich Presence by building a cross-platform
+						desktop app that eliminated the need for coding.</li>
+					<li>Impact: Empowered non-technical users to create, preview, and manage multiple Rich Presence
+						profiles with persistent storage and real-time Discord integration, improving accessibility and ease of use.</li>
 				</ul>
 			</div>
 		},
@@ -37,18 +35,12 @@ export default function MyTimeline() {
 			date: new Date("2025-02-11T23:36:32Z"),
 			url: `https://github.com/${GithubProjectDescriptor.aulaServer.ownerName}/${GithubProjectDescriptor.aulaServer.repositoryName}`,
 			timelineContent: <div className="MyTimelineCardContent">
-				<p>
-					Engineered a full-featured backend system for a narrative-driven social network, using .NET 9, ASP.NET Core,
-					and Entity Framework Core. Aula enables collaborative storytelling through chat "rooms", real-time interactions,
-					role-based access control, and ambient audio.
-					Inspired by the interactive novel <a href="https://store.steampowered.com/app/1318800/ESC/" target="_blank">ESC</a>,
-					the platform emphasizes imagination over visuals.
-				</p>
+				<strong>Creator & Sole Developer</strong>
 				<ul>
-					<li>Designed and deployed REST and WebSocket APIs to support both synchronous and real-time client communication</li>
-					<li>Implemented modular configuration, user permission systems, and dynamic audio-based environments</li>
-					<li>Developed CLI commands for server management</li>
-					<li>Dockerized for production deployment and local development</li>
+					<li>Addressed the lack of structured collaborative storytelling
+						tools by designing a scalable backend using .NET 9, ASP.NET Core, and Entity Framework Core.</li>
+					<li>Impact: Enabled immersive, role-based collaborative storytelling with real-time chatrooms and audio
+						environments; improved operational efficiency with a fully Dockerized deployment pipeline and CLI management tools.</li>
 				</ul>
 			</div>
 		},
@@ -58,15 +50,12 @@ export default function MyTimeline() {
 			date: new Date("2025-02-11T23:36:32Z"),
 			url: `https://github.com/${GithubProjectDescriptor.aulajs.ownerName}/${GithubProjectDescriptor.aulajs.repositoryName}`,
 			timelineContent: <div className="MyTimelineCardContent">
-				<p>
-					Developed a framework-agnostic, fully-typed TypeScript library to interact with the Aula
-					platform. <code>aula.js</code> provides seamless integration with both the REST and real-time WebSocket APIs,
-					enabling developers to build scalable, maintainable frontends and bots for narrative roleplay applications.
-				</p>
+				<strong>Creator & Maintainer</strong>
 				<ul>
-					<li>Implemented a modular architecture supporting extensibility and framework independence</li>
-					<li>Integrated REST and Gateway APIs with strongly-typed interfaces and event-based hooks</li>
-					<li>Supports both browser and server-side usage with full ES module compatibility</li>
+					<li>Solved developer integration friction by delivering a modular,
+						fully-typed TypeScript library to interact with Aula’s REST and WebSocket APIs across browsers and servers.</li>
+					<li>Impact: Accelerated third-party application and bot development
+						for the Aula platform by providing a robust, maintainable SDK with extensibility and strict type safety.</li>
 				</ul>
 			</div>
 		},
@@ -76,10 +65,10 @@ export default function MyTimeline() {
 			date: new Date("2025-02-11T23:14:28Z"),
 			url: `https://github.com/${GithubProjectDescriptor.enter.ownerName}/${GithubProjectDescriptor.enter.repositoryName}`,
 			timelineContent: <div className="MyTimelineCardContent">
-				<p>
-					Created a fully interactive React-based interface for the Aula platform, replicating the aesthetic and user flow of the interactive novel <a href="https://store.steampowered.com/app/1318800/ESC/" target="_blank">ESC</a>. ENTER acts as the primary client for narrative interaction, integrating tightly with the <code>aula.js</code> library and Aula backend APIs.
-				</p>
+				<strong>Creator & Sole Developer</strong>
 				<ul>
+					<li>Tackled the need for engaging narrative interfaces by building a React-based immersive UI inspired by interactive novels like ESC.</li>
+					<li>Impact: Delivered a unique narrative experience that significantly boosted user engagement and session retention within the Aula ecosystem.</li>
 					<li>Designed as an interactive tribute to the visual style and atmosphere of the novel ESC</li>
 				</ul>
 			</div>
@@ -90,15 +79,12 @@ export default function MyTimeline() {
 			date: new Date("2025-07-11T22:36:33Z"),
 			url: `https://github.com/${GithubProjectDescriptor.typeHelper.ownerName}/${GithubProjectDescriptor.typeHelper.repositoryName}`,
 			timelineContent: <div className="MyTimelineCardContent">
-				<p>
-					Developed a highly modular and environment-agnostic library to perform runtime type validation in JavaScript,
-					with first-class TypeScript integration and smart type inference.
-					It enables safer code practices without adding external dependencies or compromising performance.
-				</p>
+				<strong>Creator & Maintainer</strong>
 				<ul>
-					<li>Designed a rich API for runtime type checking and validation across environments (Node.js, Deno, browser)</li>
-					<li>Implemented robust assertion utilities that throw context-aware <code>TypeError</code>s for defensive programming</li>
-					<li>Enabled support for TypeScript-native types, enum validation, and class constructors</li>
+					<li>Solved the absence of lightweight runtime validation by creating a dependency-free
+						library with TypeScript inference, compatible across Node.js, Deno, and browsers.</li>
+					<li>Impact: Promoted safer coding practices and reduced runtime errors,
+						offering developers robust type checks without compromising performance.</li>
 				</ul>
 			</div>
 		},
@@ -108,16 +94,12 @@ export default function MyTimeline() {
 			date: new Date("2025-07-12T19:19:20Z"),
 			url: `https://github.com/${GithubProjectDescriptor.httpAbstractions.ownerName}/${GithubProjectDescriptor.httpAbstractions.repositoryName}`,
 			timelineContent: <div className="MyTimelineCardContent">
-				<p>
-					Developed a framework-agnostic HTTP abstraction library based
-					on .NET's <code>HttpClient</code> model, adapted for JavaScript/TypeScript.
-					Enables building structured HTTP pipelines with clear separation of concerns and reusability.
-				</p>
+				<strong>Creator & Maintainer</strong>
 				<ul>
-					<li>Implements abstractions like <code>HttpClient</code>, <code>HttpRequestMessage</code>, <code>HttpContent</code>, and <code>HttpMessageHandler</code></li>
-					<li>Supports middleware-style chaining for logging, retries, and authentication</li>
-					<li>Runs in Node.js, Deno, browsers, and edge runtimes without modification</li>
-					<li>TypeScript-first design with clean, modular architecture</li>
+					<li>Solved repetitive and unstructured HTTP client code by designing a modular,
+						middleware-driven HTTP abstraction inspired by .NET’s HttpClient model for JavaScript/TypeScript.</li>
+					<li>Impact: Improved code maintainability and reusability in complex applications, enabling clean,
+						portable HTTP request pipelines across multiple environments (Node.js, Deno, browsers, edge runtimes).</li>
 				</ul>
 			</div>
 		}
