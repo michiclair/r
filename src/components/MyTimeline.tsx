@@ -18,7 +18,7 @@ export default function MyTimeline() {
 			cardTitle: "AliisRPCMaker",
 			cardSubtitle: "Desktop application built to simplify the creation of custom Discord Rich Presences.",
 			date: new Date("2022-09-09T21:12:36Z"),
-			url: `https://github.com/${GithubProjectDescriptor.aliisRpcMaker.ownerName}/${GithubProjectDescriptor.aliisRpcMaker.repositoryName}`,
+			url: GithubProjectDescriptor.aliisRpcMaker.url,
 			timelineContent: <div className="MyTimelineCardContent">
 				<strong>Creator & Sole Developer</strong>
 				<ul>
@@ -33,7 +33,7 @@ export default function MyTimeline() {
 			cardTitle: "Aula – Roleplay Social Platform",
 			cardSubtitle: "A social platform focused on creating and developing roleplay stories.",
 			date: new Date("2025-02-11T23:36:32Z"),
-			url: `https://github.com/${GithubProjectDescriptor.aulaServer.ownerName}/${GithubProjectDescriptor.aulaServer.repositoryName}`,
+			url: GithubProjectDescriptor.aulaServer.url,
 			timelineContent: <div className="MyTimelineCardContent">
 				<strong>Creator & Sole Developer</strong>
 				<ul>
@@ -48,7 +48,7 @@ export default function MyTimeline() {
 			cardTitle: "aula.js – TypeScript Client Library for Aula",
 			cardSubtitle: "Modular, framework-agnostic TypeScript client for the Aula platform. Enables seamless integration with REST and Gateway APIs.",
 			date: new Date("2025-02-11T23:36:32Z"),
-			url: `https://github.com/${GithubProjectDescriptor.aulajs.ownerName}/${GithubProjectDescriptor.aulajs.repositoryName}`,
+			url: GithubProjectDescriptor.aulajs.url,
 			timelineContent: <div className="MyTimelineCardContent">
 				<strong>Creator & Maintainer</strong>
 				<ul>
@@ -63,7 +63,7 @@ export default function MyTimeline() {
 			cardTitle: "ENTER – Immersive Web UI for Aula",
 			cardSubtitle: "Interactive frontend built with React to simulate the narrative atmosphere of ESC.",
 			date: new Date("2025-02-11T23:14:28Z"),
-			url: `https://github.com/${GithubProjectDescriptor.enter.ownerName}/${GithubProjectDescriptor.enter.repositoryName}`,
+			url: GithubProjectDescriptor.enter.url,
 			timelineContent: <div className="MyTimelineCardContent">
 				<strong>Creator & Sole Developer</strong>
 				<ul>
@@ -77,7 +77,7 @@ export default function MyTimeline() {
 			cardTitle: "michi-typehelper – Type-Safe Runtime Validation for JavaScript",
 			cardSubtitle: "Lightweight and dependency-free runtime type validation library with TypeScript inference and full environment support.",
 			date: new Date("2025-07-11T22:36:33Z"),
-			url: `https://github.com/${GithubProjectDescriptor.typeHelper.ownerName}/${GithubProjectDescriptor.typeHelper.repositoryName}`,
+			url: GithubProjectDescriptor.typeHelper.url,
 			timelineContent: <div className="MyTimelineCardContent">
 				<strong>Creator & Maintainer</strong>
 				<ul>
@@ -92,7 +92,7 @@ export default function MyTimeline() {
 			cardTitle: "michi-http-abstractions – Composable HTTP Library Inspired by .NET",
 			cardSubtitle: "Composable HTTP client abstractions inspired by .NET, built for JavaScript and TypeScript. Designed for portability, and code clarity.",
 			date: new Date("2025-07-12T19:19:20Z"),
-			url: `https://github.com/${GithubProjectDescriptor.httpAbstractions.ownerName}/${GithubProjectDescriptor.httpAbstractions.repositoryName}`,
+			url: GithubProjectDescriptor.httpAbstractions.url,
 			timelineContent: <div className="MyTimelineCardContent">
 				<strong>Creator & Maintainer</strong>
 				<ul>
@@ -107,7 +107,7 @@ export default function MyTimeline() {
 			cardTitle: "Docrypted – Local Encryption & Decryption Web Tool",
 			cardSubtitle: "A simple browser-based tool to write, encrypt, and decrypt text files fully offline with local processing.",
 			date: new Date("2025-07-18T00:00:00Z"),
-			url: `https://github.com/${GithubProjectDescriptor.docrypted.ownerName}/${GithubProjectDescriptor.docrypted.repositoryName}`,
+			url: GithubProjectDescriptor.docrypted.url,
 			timelineContent: <div className="MyTimelineCardContent">
 				<strong>Creator & Sole Developer</strong>
 				<ul>
