@@ -102,6 +102,22 @@ export default function MyTimeline() {
 						portable HTTP request pipelines across multiple environments (Node.js, Deno, browsers, edge runtimes).</li>
 				</ul>
 			</div>
+		},
+		{
+			cardTitle: "Docrypted – Local Encryption & Decryption Web Tool",
+			cardSubtitle: "A simple browser-based tool to write, encrypt, and decrypt text files fully offline with local processing.",
+			date: new Date("2025-07-18T00:00:00Z"),
+			url: `https://github.com/${GithubProjectDescriptor.docrypted.ownerName}/${GithubProjectDescriptor.docrypted.repositoryName}`,
+			timelineContent: <div className="MyTimelineCardContent">
+				<strong>Creator & Sole Developer</strong>
+				<ul>
+					<li>Solved the need for privacy-friendly text encryption by building a lightweight web app that processes all
+						data locally in the browser, eliminating any server dependency.</li>
+					<li>Impact: Empowered users to securely encrypt and decrypt sensitive text files with full client-side
+						privacy, instant responsiveness, and no setup or installations, enhancing both security and
+						accessibility through a clean, minimalist interface.</li>
+				</ul>
+			</div>
 		}
 	] satisfies TimelineItemModel[];
 
