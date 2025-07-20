@@ -1,7 +1,6 @@
 ﻿.MyTimeline {
 	position: relative;
-	left: -1%;
-	width: 102%;
+	font-size: 0.95em;
 }
 
 .MyTimeline h1, .MyTimeline h2, .MyTimeline h3, .MyTimeline h4, .MyTimeline h5, .MyTimeline h6 {
@@ -19,8 +18,8 @@
 	font-weight: 600;
 }
 
-.MyTimelineCard, .MyTimelineControls {
-	box-sizing: border-box;
+.MyTimelineCard {
+	max-width: 80% !important;
 }
 
 .MyTimelineCardContent {
