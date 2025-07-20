@@ -132,7 +132,7 @@ export default function MyTimeline() {
 					highlightCardsOnHover
 					theme={theme}
 					items={items}
-					mode="HORIZONTAL"
+					mode="VERTICAL"
 					semanticTags={{
 						cardTitle: 'h1',
 						cardSubtitle: 'h2',
