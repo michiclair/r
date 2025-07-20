@@ -76,18 +76,6 @@ export default function Body()
 				TechnologyDescriptor.html,
 			]}/>
 		</section>
-		<section className="Body_projects">
-			<h2>Projects</h2>
-			<ProjectCardList projects={[
-				GithubProjectDescriptor.aulaServer,
-				GithubProjectDescriptor.aulajs,
-				GithubProjectDescriptor.enter,
-				GithubProjectDescriptor.aliisRpcMaker,
-				GithubProjectDescriptor.typeHelper,
-				GithubProjectDescriptor.httpAbstractions,
-				GithubProjectDescriptor.docrypted,
-			]}/>
-		</section>
 		<section>
 			<h2>Certifications</h2>
 			<ul>
