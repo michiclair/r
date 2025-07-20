@@ -127,4 +127,9 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 	{
 		return this.#_repositoryName;
 	}
+
+	public get url()
+	{
+		return `https://github.com/${this.#_ownerName}/${this.repositoryName}`;
+	}
 }
