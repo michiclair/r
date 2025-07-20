@@ -60,6 +60,18 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 		],
 		"michironoaware",
 		"michi-http-abstractions");
+	static readonly #s_docrypted: GithubProjectDescriptor = new GithubProjectDescriptor(
+		[
+			TechnologyDescriptor.javascript,
+			TechnologyDescriptor.typescript,
+			TechnologyDescriptor.nodejs,
+			TechnologyDescriptor.html,
+			TechnologyDescriptor.css,
+			TechnologyDescriptor.tailwind,
+			TechnologyDescriptor.react
+		],
+		"michironoaware",
+		"Docrypted");
 
 	readonly #_ownerName: string;
 	readonly #_repositoryName: string;
@@ -99,6 +111,11 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 	public static get httpAbstractions()
 	{
 		return this.#s_httpAbstractions;
+	}
+
+	public static get docrypted()
+	{
+		return this.#s_docrypted;
 	}
 
 	public get ownerName()
