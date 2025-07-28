@@ -20,7 +20,7 @@ export default function Body()
 				<p>
 					Enthusiastic and dedicated developer with hands-on experience in
 					projects and a strong passion for building robust, scalable solutions.
-					Actively seeking my first professional opportunity to apply my
+					Actively seeking professional opportunities to apply my
 					skills and grow within a real-world development environment.
 				</p>
 				<p>Córdoba, Argentina.</p>
