@@ -34,15 +34,15 @@ h2 {
 }
 
 h3 {
-	font-size: var(--fontsize-xl);
-}
-
-h4 {
 	font-size: var(--fontsize-lg);
 }
 
-h5 {
+h4 {
 	font-size: var(--fontsize-md);
+}
+
+h5 {
+	font-size: var(--fontsize-sm);
 }
 
 h6 {
