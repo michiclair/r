@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px solid #00000022;
 }
 
+h3, h4, h5, h6 {
+	color: color-mix(in oklch, var(--font-color), var(--background-color) 40%);
+}
+
 h1 {
 	font-size: var(--fontsize-xxl2);
 }
