@@ -1,5 +1,6 @@
 ﻿import { TimelineEventDescriptor } from "./TimelineEventDescriptor.ts";
 import { DateHelper } from "../shared/DateHelper.ts";
+import "../styles/TimelineEvent.css";
 
 export default function TimelineEvent(props: ITimelineEventProperties)
 {
@@ -14,8 +15,11 @@ export default function TimelineEvent(props: ITimelineEventProperties)
 	return <div className={"TimelineEvent"}>
 		{title}
 		<p>{descriptor.description}</p>
-		<p><b>SOLVED:</b> {descriptor.solved}</p>
-		<p><b>IMPACT:</b> {descriptor.impact}</p>
+		<b>{descriptor.role}</b>
+		<ul>
+			<li><b>Solved:</b> {descriptor.solved}</li>
+			<li><b>Impact:</b> {descriptor.impact}</li>
+		</ul>
 	</div>
 }
 
