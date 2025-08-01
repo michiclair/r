@@ -1,6 +1,7 @@
 ﻿import React from "react";
 import "../styles/Body.css";
 import TechnologyDescriptor from "./TechnologyDescriptor.ts";
+import { TimelineEventDescriptor } from "./TimelineEventDescriptor.ts";
 import GithubProjectDescriptor from "./GithubProjectDescriptor.ts";
 import ProfilePicture from "./ProfilePicture.tsx";
 import ProjectCardList from "./ProjectCardList.tsx";
@@ -10,6 +11,7 @@ import { RedirectSocialDescriptor } from "./RedirectSocialDescriptor.ts";
 import { ClipboardSocialDescriptor } from "./ClipboardSocialDescriptor.ts";
 import TechnologyTextRef from "./TechnologyTextRef.tsx";
 import MyTimeline from "./MyTimeline.tsx";
+import Timeline from "./Timeline.tsx";
 
 export default function Body()
 {
@@ -32,36 +34,9 @@ export default function Body()
 			</div>
 			<ProfilePicture source="https://avatars.githubusercontent.com/u/77251557"></ProfilePicture>
 		</section>
-		<section className="Body_experience">
-			<h2>Experience</h2>
-			<p>
-				I have practical experience with a modern backend-focused tech stack, including&nbsp;
-				<TechnologyTextRef technology={TechnologyDescriptor.dotnet} />,&nbsp;
-				<TechnologyTextRef technology={TechnologyDescriptor.aspnet} />,&nbsp;
-				<TechnologyTextRef technology={TechnologyDescriptor.efcore} />,
-				which I’ve used to build robust APIs and scalable backend services.
-				I focus on writing clear, maintainable code and continuously improving my development practices through real project work.
-			</p>
-			<p>
-				Although my primary interest is backend development,
-				I’m also familiar with front-end technologies like&nbsp;
-				<TechnologyTextRef technology={TechnologyDescriptor.react} />,&nbsp;
-				<TechnologyTextRef technology={TechnologyDescriptor.typescript} />,&nbsp;
-				<TechnologyTextRef technology={TechnologyDescriptor.javascript} />,&nbsp;
-				<TechnologyTextRef technology={TechnologyDescriptor.html} />,
-				and <TechnologyTextRef technology={TechnologyDescriptor.css} />,
-				which helps me collaborate effectively in full-stack environments.
-				I’ve used <TechnologyTextRef technology={TechnologyDescriptor.docker} /> to
-				set up consistent development environments,
-				and Node.js mainly for front-end tooling and build processes.
-			</p>
-			<p style={{ marginBottom: "1.5em" }}>
-				Through my projects, I’ve developed a strong foundation in backend engineering
-				and a solid understanding of full-stack development.
-				I'm eager to join a professional team, deepen my expertise,
-				and contribute clean, reliable code to real-world applications.
-			</p>
-			<MyTimeline></MyTimeline>
+		<section className="Body_techSkills">
+			<h2>Technical Skills</h2>
+			<h3>Languages & Frameworks</h3>
 			<TechnologyButtonList technologies={[
 				TechnologyDescriptor.dotnet,
 				TechnologyDescriptor.aspnet,
@@ -74,6 +49,31 @@ export default function Body()
 				TechnologyDescriptor.javascript,
 				TechnologyDescriptor.css,
 				TechnologyDescriptor.html,
+				TechnologyDescriptor.tailwind,
+				TechnologyDescriptor.electron,
+			]}/>
+			<h3>Tools & Platforms</h3>
+			<TechnologyButtonList technologies={[
+				TechnologyDescriptor.jetBrainsRider,
+				TechnologyDescriptor.git,
+				TechnologyDescriptor.github,
+				TechnologyDescriptor.githubActions,
+				TechnologyDescriptor.swagger,
+				TechnologyDescriptor.scalar,
+				TechnologyDescriptor.xUnit,
+				TechnologyDescriptor.aws,
+			]}/>
+		</section>
+		<section className="Body_experience">
+			<h2>Experience</h2>
+			<Timeline events={[
+				TimelineEventDescriptor.aliisRPCMaker,
+				TimelineEventDescriptor.aulaServer,
+				TimelineEventDescriptor.aulajs,
+				TimelineEventDescriptor.enter,
+				TimelineEventDescriptor.typeHelper,
+				TimelineEventDescriptor.httpAbstractions,
+				TimelineEventDescriptor.docrypted,
 			]}/>
 		</section>
 		<section>
