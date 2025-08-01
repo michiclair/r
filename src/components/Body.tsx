@@ -42,7 +42,6 @@ export default function Body()
 				TechnologyDescriptor.aspnet,
 				TechnologyDescriptor.csharp,
 				TechnologyDescriptor.efcore,
-				TechnologyDescriptor.docker,
 				TechnologyDescriptor.nodejs,
 				TechnologyDescriptor.react,
 				TechnologyDescriptor.typescript,
@@ -62,6 +61,7 @@ export default function Body()
 				TechnologyDescriptor.scalar,
 				TechnologyDescriptor.xUnit,
 				TechnologyDescriptor.aws,
+				TechnologyDescriptor.docker,
 			]}/>
 		</section>
 		<section className="Body_experience">
