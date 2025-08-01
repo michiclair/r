@@ -1,9 +1,9 @@
-﻿.TechnologyButton:is(button) {
+﻿.TechnologyButton {
 	height: 2.75em;
 	min-width: 2.75em;
 	border: none;
+	text-decoration: none;
 }
-
 
 .TechnologyButton {
 	padding: 0.5em;
@@ -20,6 +20,9 @@
 
 .TechnologyButton, .TechnologyButton img {
 	align-content: center;
-	height: 1.75em;
 	border-radius: 0.5em;
+}
+
+.TechnologyButton img {
+	height: 1.75em;
 }
