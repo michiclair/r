@@ -65,6 +65,38 @@
 		"Tailwind CSS",
 		"https://tailwindcss.com/",
 		"./assets/tailwind.png");
+	static readonly #s_jetBrainsRider: TechnologyDescriptor = new TechnologyDescriptor(
+		"JetBrains Rider",
+		"https://www.jetbrains.com/rider/",
+		"./assets/jetbrainsrider.webp");
+	static readonly #s_git: TechnologyDescriptor = new TechnologyDescriptor(
+		"Git",
+		"https://git-scm.com/doc",
+		"./assets/git.png");
+	static readonly #s_github: TechnologyDescriptor = new TechnologyDescriptor(
+		"Github",
+		"https://github.com/",
+		"./assets/github_icon.svg");
+	static readonly #s_githubActions: TechnologyDescriptor = new TechnologyDescriptor(
+		"Github Actions",
+		"https://github.com/",
+		"./assets/github_icon.svg");
+	static readonly #s_swagger: TechnologyDescriptor = new TechnologyDescriptor(
+		"Swagger",
+		"https://swagger.io/",
+		"./assets/swagger.png");
+	static readonly #s_scalar: TechnologyDescriptor = new TechnologyDescriptor(
+		"Scalar",
+		"https://github.com/ScalaR/ScalaR",
+		"./assets/scalar.svg");
+	static readonly #s_xUnit: TechnologyDescriptor = new TechnologyDescriptor(
+		"XUnit",
+		"https://github.com/xunit/",
+		"./assets/xunit.png");
+	static readonly #s_aws: TechnologyDescriptor = new TechnologyDescriptor(
+		"AWS",
+		"https://aws.amazon.com/",
+		"./assets/aws.png");
 
 	readonly #_name: string;
 	readonly #_source: string;
@@ -145,6 +177,46 @@
 	public static get tailwind()
 	{
 		return this.#s_tailwind;
+	}
+
+	public static get jetBrainsRider()
+	{
+		return this.#s_jetBrainsRider;
+	}
+
+	public static get git()
+	{
+		return this.#s_git;
+	}
+
+	public static get github()
+	{
+		return this.#s_github;
+	}
+
+	public static get githubActions()
+	{
+		return this.#s_githubActions;
+	}
+
+	public static get swagger()
+	{
+		return this.#s_swagger;
+	}
+
+	public static get scalar()
+	{
+		return this.#s_scalar;
+	}
+
+	public static get xUnit()
+	{
+		return this.#s_xUnit;
+	}
+
+	public static get aws()
+	{
+		return this.#s_aws;
 	}
 
 	public get name()
