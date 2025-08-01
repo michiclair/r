@@ -20,6 +20,7 @@ export default function TechnologyButton(props: ITechnologyButtonProperties)
 	}, []);
 
 	return <button className="TechnologyButton Button" id={elementId}>
+		{props.technology.name}
 		<img src={props.technology.imageSource} alt={props.technology.name}/>
 	</button>
 }

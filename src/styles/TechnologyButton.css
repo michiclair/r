@@ -1,16 +1,25 @@
 ﻿.TechnologyButton:is(button) {
 	height: 2.75em;
-	width: 2.75em;
+	min-width: 2.75em;
 	border: none;
-	font-size: var(--fontsize-md);
 }
 
 
 .TechnologyButton {
 	padding: 0.5em;
+	display: flex;
+	box-sizing: border-box;
+	color: color-mix(in oklch, var(--font-color), var(--background-color) 50%);
+	gap: 0.5em;
+	align-items: center;
+	font-family: "Ubuntu", 'Noto Sans', sans-serif;
+	font-size: var(--fontsize-xs);
+	font-weight: 600;
+	margin-right: 0.5em;
 }
 
 .TechnologyButton, .TechnologyButton img {
+	align-content: center;
 	height: 1.75em;
 	border-radius: 0.5em;
 }
