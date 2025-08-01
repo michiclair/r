@@ -60,7 +60,7 @@
 	static readonly #s_electron: TechnologyDescriptor = new TechnologyDescriptor(
 		"Electron",
 		"https://www.electronjs.org/",
-		"./assets/electron.png");
+		"./assets/electron.webp");
 	static readonly #s_tailwind: TechnologyDescriptor = new TechnologyDescriptor(
 		"Tailwind CSS",
 		"https://tailwindcss.com/",
