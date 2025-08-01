@@ -7,7 +7,7 @@ export class TimelineEventDescriptor
 		"Desktop application built to simplify the creation of custom Discord Rich Presences.",
 		"Solved the complexity of configuring Discord Rich Presence by building a cross-platform desktop app that eliminated the need for coding.",
 		"Empowered non-technical users to create, preview, and manage multiple Rich Presence profiles with persistent storage and real-time Discord integration.",
-		new Date("2022-09-09T21:12:36Z"), undefined,
+		new Date("2022-09-09T21:12:36Z"), null,
 		"Creator & Developer",
 		GithubProjectDescriptor.aliisRpcMaker.url
 	);
@@ -16,7 +16,7 @@ export class TimelineEventDescriptor
 		"A social platform focused on creating and developing roleplay stories.",
 		"Addressed the lack of structured collaborative storytelling tools by designing a scalable backend using .NET 9, ASP.NET Core, and Entity Framework Core.",
 		"Enabled immersive, role-based collaborative storytelling with real-time chatrooms and audio environments; improved operational efficiency with a fully Dockerized deployment pipeline and CLI management tools.",
-		new Date("2025-02-11T23:36:32Z"), undefined,
+		new Date("2025-02-11T23:36:32Z"), null,
 		"Creator & Developer",
 		GithubProjectDescriptor.aulaServer.url
 	);
@@ -25,7 +25,7 @@ export class TimelineEventDescriptor
 		"Modular, framework-agnostic TypeScript client for the Aula platform.",
 		"Solved developer integration friction by delivering a modular, fully-typed TypeScript library to interact with Aula’s REST and WebSocket APIs across browsers and servers.",
 		"Accelerated third-party application and bot development for the Aula platform by providing a robust, maintainable SDK with extensibility and strict type safety.",
-		new Date("2025-02-11T23:36:32Z"), undefined,
+		new Date("2025-02-11T23:36:32Z"), null,
 		"Creator & Maintainer",
 		GithubProjectDescriptor.aulajs.url
 	);
@@ -34,7 +34,7 @@ export class TimelineEventDescriptor
 		"Interactive frontend built with React to simulate the narrative atmosphere of ESC.",
 		"Tackled the need for engaging narrative interfaces by building a React-based immersive UI inspired by interactive novels like ESC.",
 		"Delivered a unique narrative experience that significantly boosted user engagement and session retention within the Aula ecosystem.",
-		new Date("2025-02-11T23:14:28Z"), undefined,
+		new Date("2025-02-11T23:14:28Z"), null,
 		"Creator & Developer",
 		GithubProjectDescriptor.enter.url
 	);
@@ -43,7 +43,7 @@ export class TimelineEventDescriptor
 		"Lightweight and dependency-free runtime type validation library with TypeScript inference.",
 		"Solved the absence of lightweight runtime validation by creating a dependency-free library with TypeScript inference, compatible across Node.js, Deno, and browsers.",
 		"Promoted safer coding practices and reduced runtime errors, offering developers robust type checks without compromising performance.",
-		new Date("2025-07-11T22:36:33Z"), undefined,
+		new Date("2025-07-11T22:36:33Z"), null,
 		"Creator & Developer",
 		GithubProjectDescriptor.typeHelper.url
 	);
@@ -52,7 +52,7 @@ export class TimelineEventDescriptor
 		"Composable HTTP client abstractions inspired by .NET, built for JavaScript and TypeScript.",
 		"Solved repetitive and unstructured HTTP client code by designing a modular, middleware-driven HTTP abstraction inspired by .NET’s HttpClient model for JavaScript/TypeScript.",
 		"Improved code maintainability and reusability in complex applications, enabling clean, portable HTTP request pipelines across multiple environments (Node.js, Deno, browsers, edge runtimes).",
-		new Date("2025-07-12T19:19:20Z"), undefined,
+		new Date("2025-07-12T19:19:20Z"), null,
 		"Creator & Developer",
 		GithubProjectDescriptor.httpAbstractions.url
 	);
@@ -61,7 +61,7 @@ export class TimelineEventDescriptor
 		"A simple browser-based tool to write, encrypt, and decrypt text files fully offline with local processing.",
 		"Solved the need for privacy-friendly text encryption by building a lightweight web app that processes all data locally in the browser, eliminating any server dependency.",
 		"Empowered users to securely encrypt and decrypt sensitive text files with full client-side privacy, instant responsiveness, and no setup or installations, enhancing both security and accessibility through a clean, minimalist interface.",
-		new Date("2025-07-18T00:00:00Z"), undefined,
+		new Date("2025-07-18T00:00:00Z"), null,
 		"Creator & Developer",
 		GithubProjectDescriptor.docrypted.url
 	);
@@ -75,16 +75,16 @@ export class TimelineEventDescriptor
 	readonly #_role: string;
 	readonly #_source: string | null;
 
-	protected constructor(name: string, description: string, solved: string, impact: string, startDate: Date, endDate?: Date, role: string, source?: string)
+	protected constructor(name: string, description: string, solved: string, impact: string, startDate: Date, endDate: Date | null, role: string, source: string | null)
 	{
 		this.#_name = name;
 		this.#_description = description;
 		this.#_solved = solved;
 		this.#_impact = impact;
 		this.#_startDate = startDate;
-		this.#_endDate = endDate ?? null;
+		this.#_endDate = endDate;
 		this.#_role = role;
-		this.#_source = source ?? null;
+		this.#_source = source;
 	}
 
 	public static get aliisRPCMaker()
