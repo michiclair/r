@@ -17,7 +17,7 @@ export default function ProjectCard(props: IProjectCardProperties)
 	{
 		if (props.project instanceof GithubProjectDescriptor)
 		{
-			const repositoryAddress = `https://github.com/${props.project.ownerName}/${props.project.repositoryName}`;
+			const repositoryAddress = props.project.url;
 			setAddress(repositoryAddress);
 			document.getElementById(elementId)!.addEventListener("click", () => window.open(repositoryAddress, '_blank')!.focus());
 
