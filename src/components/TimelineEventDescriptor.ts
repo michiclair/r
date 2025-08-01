@@ -151,7 +151,12 @@ export class TimelineEventDescriptor
 	{
 		return this.#_endDate;
 	}
-	
+
+	public get role()
+	{
+		return this.#_role;
+	}
+
 	public get source()
 	{
 		return this.#_source;
