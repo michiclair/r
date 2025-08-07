@@ -71,9 +71,9 @@ export default function Body()
 				TimelineEventDescriptor.aulaServer,
 				TimelineEventDescriptor.aulajs,
 				TimelineEventDescriptor.enter,
+				TimelineEventDescriptor.docrypted,
 				TimelineEventDescriptor.typeHelper,
 				TimelineEventDescriptor.httpAbstractions,
-				TimelineEventDescriptor.docrypted,
 			]}/>
 		</section>
 		<section>
@@ -92,9 +92,9 @@ export default function Body()
 		<section className="Body_languages">
 			<h2>Languages</h2>
 			<ul>
-				<li>Spanish - Fluent</li>
-				<li>English - Intermediate (able to read, write, and communicate in technical contexts)</li>
-				<li>Latin - Intermediate</li>
+				<li>Spanish (fluent)</li>
+				<li>English (able to read, write, and communicate in technical contexts)</li>
+				<li>Latin (studied grammar)</li>
 			</ul>
 		</section>
 		<div style={{ marginBottom: "10em" }}></div>

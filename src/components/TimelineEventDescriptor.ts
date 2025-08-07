@@ -44,7 +44,7 @@ export class TimelineEventDescriptor
 		"Solved the absence of lightweight runtime validation by creating a dependency-free library with TypeScript inference, compatible across Node.js, Deno, and browsers.",
 		"Promoted safer coding practices and reduced runtime errors, offering developers robust type checks without compromising performance.",
 		new Date("2025-07-11T22:36:33Z"), null,
-		"Creator & Developer",
+		"Creator & Maintainer",
 		GithubProjectDescriptor.typeHelper.url
 	);
 	static readonly #_httpAbstractions = new TimelineEventDescriptor(
@@ -53,7 +53,7 @@ export class TimelineEventDescriptor
 		"Solved repetitive and unstructured HTTP client code by designing a modular, middleware-driven HTTP abstraction inspired by .NET’s HttpClient model for JavaScript/TypeScript.",
 		"Improved code maintainability and reusability in complex applications, enabling clean, portable HTTP request pipelines across multiple environments (Node.js, Deno, browsers, edge runtimes).",
 		new Date("2025-07-12T19:19:20Z"), null,
-		"Creator & Developer",
+		"Creator & Maintainer",
 		GithubProjectDescriptor.httpAbstractions.url
 	);
 	static readonly #_docrypted = new TimelineEventDescriptor(
