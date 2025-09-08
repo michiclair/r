@@ -9,7 +9,7 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 			TechnologyDescriptor.typescript,
 			TechnologyDescriptor.nodejs,
 		],
-		"michironoaware",
+		"espinachmichelle",
 		"aula.js");
 	static readonly #s_aulaServer: GithubProjectDescriptor = new GithubProjectDescriptor(
 		[
@@ -19,7 +19,7 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 			TechnologyDescriptor.efcore,
 			TechnologyDescriptor.docker,
 		],
-		"michironoaware",
+		"espinachmichelle",
 		"Aula-Server");
 	static readonly #s_enter: GithubProjectDescriptor = new GithubProjectDescriptor(
 		[
@@ -30,7 +30,7 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 			TechnologyDescriptor.css,
 			TechnologyDescriptor.react,
 		],
-		"michironoaware",
+		"espinachmichelle",
 		"ENTER");
 	static readonly #s_aliisRpcMaker: GithubProjectDescriptor = new GithubProjectDescriptor(
 		[
@@ -42,7 +42,7 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 			TechnologyDescriptor.tailwind,
 			TechnologyDescriptor.electron
 		],
-		"michironoaware",
+		"espinachmichelle",
 		"AliisRPCMaker");
 	static readonly #s_typeHelper: GithubProjectDescriptor = new GithubProjectDescriptor(
 		[
@@ -50,7 +50,7 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 			TechnologyDescriptor.typescript,
 			TechnologyDescriptor.nodejs,
 		],
-		"michironoaware",
+		"espinachmichelle",
 		"michi-typehelper");
 	static readonly #s_httpAbstractions: GithubProjectDescriptor = new GithubProjectDescriptor(
 		[
@@ -58,7 +58,7 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 			TechnologyDescriptor.typescript,
 			TechnologyDescriptor.nodejs,
 		],
-		"michironoaware",
+		"espinachmichelle",
 		"michi-http-abstractions");
 	static readonly #s_docrypted: GithubProjectDescriptor = new GithubProjectDescriptor(
 		[
@@ -70,7 +70,7 @@ export default class GithubProjectDescriptor extends ProjectDescriptor
 			TechnologyDescriptor.tailwind,
 			TechnologyDescriptor.react
 		],
-		"michironoaware",
+		"espinachmichelle",
 		"Docrypted");
 
 	readonly #_ownerName: string;

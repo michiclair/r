@@ -5,7 +5,7 @@ export class ClipboardSocialDescriptor extends SocialDescriptor
 	static readonly #_email: ClipboardSocialDescriptor = new ClipboardSocialDescriptor(
 		"Email",
 		"./assets/email_icon.svg",
-		"michironoaware@gmail.com");
+		"business.espinachmichelle@gmail.com");
 
 	readonly #_content: string;
 
