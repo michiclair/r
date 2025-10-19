@@ -32,7 +32,10 @@ export default function Body()
 					ClipboardSocialDescriptor.email,
 				]}/>
 			</div>
-			<ProfilePicture source="https://avatars.githubusercontent.com/u/77251557"></ProfilePicture>
+			{
+				// My GitHub profile picture. Hidden.
+				//<ProfilePicture source="https://avatars.githubusercontent.com/u/77251557"></ProfilePicture>
+			}
 		</section>
 		<section className="Body_techSkills">
 			<h2>Technical Skills</h2>
