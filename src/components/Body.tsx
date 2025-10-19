@@ -83,7 +83,7 @@ export default function Body()
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
-						href="https://www.freecodecamp.org/certification/michiro/foundational-c-sharp-with-microsoft">
+						href="https://www.freecodecamp.org/certification/espinach/foundational-c-sharp-with-microsoft">
 						Foundational C# with Microsoft
 					</a>
 				</li>
